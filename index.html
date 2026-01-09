@@ -2,38 +2,89 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio - Walid Aatif</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | WALID AATIF</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
-        .header { text-align: center; background: #f4f4f4; padding: 20px; }
-        .section { margin-bottom: 20px; }
-        .btn { display: inline-block; padding: 10px 20px; background: #0073b1; color: white; text-decoration: none; border-radius: 5px; }
+        :root { --primary: #2c3e50; --secondary: #3498db; --text: #333; --light: #f4f4f4; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; background: #fff; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        header { text-align: center; padding: 50px 20px; background: var(--primary); color: white; }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; object-fit: cover; }
+        .btn-group { margin-top: 20px; }
+        .btn { display: inline-block; padding: 10px 20px; margin: 5px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-cv { background: var(--secondary); color: white; }
+        .btn-kaggle { background: #20beff; color: white; }
+        section { margin: 40px 0; }
+        h2 { border-bottom: 2px solid var(--secondary); padding-bottom: 10px; color: var(--primary); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: var(--light); padding: 20px; border-radius: 8px; }
+        .footer { text-align: center; font-size: 0.9em; padding: 20px; color: #777; }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Walid Aatif</h1>
-        <p>Étudiant en Marketing Digital & Commercial | EST Salé</p>
-        <a href="walid_cv.pdf" class="btn">Télécharger mon CV (PDF)</a>
-    </div>
 
-    <div class="section">
-        <h2>À propos</h2>
-        <p>Étudiant motivé et dynamique, spécialisé en création de contenu et outils digitaux.</p>
+<header>
+    <h1>WALID AATIF</h1>
+    <p>Étudiant en 2ème année Marketing Digital & Commercial | EST Salé</p>
+    <div class="btn-group">
+        <a href="walid_cv.pdf" class="btn btn-cv" target="_blank">📄 Télécharger CV (LaTeX)</a>
+        <a href="https://www.kaggle.com/votre-nom" class="btn btn-kaggle" target="_blank">📊 Profil Kaggle</a>
     </div>
+</header>
 
-    <div class="section">
-        <h2>Projets & Réalisations</h2>
-        <ul>
-            <li><strong>Analyse Data Science :</strong> Projet de segmentation client sur <a href="#">Kaggle</a>.</li>
-            <li><strong>Stage Génifid :</strong> Support administratif et comptable.</li>
-        </ul>
-    </div>
+<div class="container">
+    <section id="about">
+        <h2>Profil Professionnel</h2>
+        <p>Étudiant à l'École Supérieure de Technologie de Salé[cite: 81, 86]. Motivé et dynamique, je maîtrise les outils de création digitale et d'intelligence artificielle[cite: 81, 82]. Je recherche activement un stage dans une multinationale à Rabat pour mettre en œuvre mes compétences en marketing et analyse de données.</p>
+    </section>
 
-    <div class="section">
+    <section id="skills">
+        <h2>Compétences & Certifications</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Marketing & Design</h3>
+                <ul>
+                    <li>Digital Marketing [cite: 62]</li>
+                    <li>Canva & Adobe Photoshop [cite: 66, 67]</li>
+                    <li>Création de contenu [cite: 64]</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Technologie & IA</h3>
+                <ul>
+                    <li>Maîtrise des outils AI [cite: 65]</li>
+                    <li>Excel, Word, PowerPoint [cite: 69]</li>
+                    <li>Certification Google Digital Marketing [cite: 72]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Expériences & Projets</h2>
+        <div class="card">
+            <h3>Stagiaire - Cabinet Comptable (GÉNFID)</h3>
+            <p><em>2024 - 2025</em></p>
+            <p>Organisation des documents et initiation aux opérations comptables. Développement de la rigueur et du sens de l'organisation[cite: 96, 97].</p>
+        </div>
+        <br>
+        <div class="card">
+            <h3>Projet Data Science (Phase 3 du TP)</h3>
+            <p>Analyse de données marketing hébergée sur GitHub et documentée sur Kaggle[cite: 27, 36].</p>
+        </div>
+    </section>
+
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: walidaatif042@gmail.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/aatif-walid-809563321">Mon profil</a></p>
-    </div>
+        <p>📍 Salé / Rabat, Maroc [cite: 59]</p>
+        <p>📧 walidaatif042@gmail.com [cite: 58]</p>
+        <p>🔗 <a href="https://linkedin.com/in/aatif-walid-809563321">LinkedIn Profile</a> [cite: 60]</p>
+    </section>
+</div>
+
+<div class="footer">
+    <p>© 2026 - Portfolio Walid Aatif - Projet Universitaire DS & BI [cite: 4]</p>
+</div>
+
 </body>
 </html>
